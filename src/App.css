@@ -1,0 +1,44 @@
+.login-button {
+  display: flex;
+  justify-content: flex-end;
+  gap: 0.5rem;
+  padding: 1rem;
+}
+
+.nav-section {
+  display: flex;
+  justify-content: center;
+}
+
+.menu-list {
+  display: flex;
+  list-style-type: none;
+  margin: 0 auto;
+}
+
+.menu-list li {
+  padding: 0.5rem;
+}
+
+.menu-area {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+}
+
+.search-input {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0.25rem 0;
+  border-bottom: 0.2rem solid black;
+  margin-bottom: 1rem;
+}
+
+.search-input input {
+  border: none;
+  outline: none; /* 파란색 아웃라인 제거 */
+  box-shadow: none; /* 일부 브라우저 그림자 제거 */
+  margin-left: 0.25rem;
+}
