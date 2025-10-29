@@ -1,8 +1,10 @@
 .login-button {
   display: flex;
   justify-content: flex-end;
+  align-items: center;
   gap: 0.5rem;
   padding: 1rem;
+  cursor: pointer;
 }
 
 .nav-section {
@@ -41,4 +43,60 @@
   outline: none; /* 파란색 아웃라인 제거 */
   box-shadow: none; /* 일부 브라우저 그림자 제거 */
   margin-left: 0.25rem;
+}
+
+.products_wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+  margin-bottom: 1rem;
+  padding: 16px;
+  border-radius: 12px;
+  background: #ffffff;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+  cursor: pointer;
+  max-width: 232px;
+}
+
+.products_wrapper:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+}
+
+.products_wrapper img {
+  border-radius: 8px;
+  transition: transform 0.3s ease;
+}
+
+.products_wrapper:hover img {
+  transform: scale(1.05);
+}
+
+.products_choice {
+  margin-top: 0.75rem;
+  font-size: 12px;
+  color: #059669;
+  font-weight: 600;
+  min-height: 18px;
+}
+
+.product_title {
+  font-weight: 600;
+  color: #1f2937;
+  font-size: 14px;
+  line-height: 1.4;
+}
+
+.product_price {
+  font-weight: 700;
+  color: #dc2626;
+  font-size: 16px;
+}
+
+.product_new {
+  font-size: 12px;
+  color: #f59e0b;
+  font-weight: 600;
+  min-height: 18px;
 }
