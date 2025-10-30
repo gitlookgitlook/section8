@@ -40,8 +40,8 @@
 
 .search-input input {
   border: none;
-  outline: none; /* 파란색 아웃라인 제거 */
-  box-shadow: none; /* 일부 브라우저 그림자 제거 */
+  outline: none;
+  box-shadow: none;
   margin-left: 0.25rem;
 }
 
@@ -76,27 +76,94 @@
 .products_choice {
   margin-top: 0.75rem;
   font-size: 12px;
-  color: #059669;
+  color: #d97706; /* 따뜻한 오렌지 */
   font-weight: 600;
   min-height: 18px;
 }
 
 .product_title {
   font-weight: 600;
-  color: #1f2937;
+  color: #92400e; /* 따뜻한 브라운 */
   font-size: 14px;
   line-height: 1.4;
 }
 
 .product_price {
   font-weight: 700;
-  color: #dc2626;
+  color: #ea580c; /* 코랄 오렌지 */
   font-size: 16px;
 }
 
 .product_new {
   font-size: 12px;
-  color: #f59e0b;
+  color: #f59e0b; /* 따뜻한 골드 */
   font-weight: 600;
   min-height: 18px;
+}
+
+.product-img {
+  display: flex;
+  justify-content: end;
+}
+
+.product-img img {
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.product-info {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 20px;
+}
+
+.product-title {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #92400e; /* 따뜻한 브라운 */
+  margin-bottom: 0.5rem;
+}
+
+.product-price {
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: #ea580c; /* 코랄 오렌지 */
+}
+
+.conscious-choice {
+  font-size: 0.9rem;
+  color: #d97706; /* 따뜻한 오렌지 */
+  font-style: italic;
+}
+
+.size-dropdown {
+  margin: 1rem 0;
+}
+
+.add-button {
+  padding: 12px 24px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  border-radius: 6px;
+  transition: all 0.3s ease;
+}
+
+.add-button:hover {
+  background-color: #92400e; /* 따뜻한 브라운 */
+  color: white;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.dropdown-toggle {
+  background-color: #f97316 !important; /* 따뜻한 오렌지 */
+  border-color: #f97316 !important;
+  color: white !important;
+}
+
+.dropdown-toggle:hover {
+  background-color: #ea580c !important; /* 조금 더 진한 오렌지 */
+  border-color: #ea580c !important;
 }
