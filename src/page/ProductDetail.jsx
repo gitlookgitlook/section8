@@ -9,7 +9,7 @@ const ProductDetail = () => {
   const [product, setProduct] = useState(null);
 
   const getProductDetail = async () => {
-    let url = `https://my-json-sever.typicode.com/gitlookgitlook/section8/products/${id}`;
+    let url = `https://my-json-server.typicode.com/gitlookgitlook/section8/products/${id}`;
     let response = await fetch(url);
     let data = await response.json();
     // console.log("dtail data?", data);
