@@ -34,8 +34,8 @@ const Navbar = ({ authenticate, setAuthenticate }) => {
   };
 
   return (
-    <div>
-      <div>
+    <div className="nav-wrapper">
+      <div className="login-bar">
         {authenticate ? (
           // 로그인된 상태 - 로그아웃 버튼
           <div className="login-button" onClick={logout}>
@@ -52,7 +52,7 @@ const Navbar = ({ authenticate, setAuthenticate }) => {
       </div>
       <div className="nav-section" onClick={goToHome} style={{ cursor: "pointer" }}>
         <img
-          width={100}
+          className="logo"
           src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/H%26M-Logo.svg/1200px-H%26M-Logo.svg.png"
           alt="H&M 로고"
         />
@@ -64,9 +64,9 @@ const Navbar = ({ authenticate, setAuthenticate }) => {
             <li key={menu}>{menu}</li>
           ))}
         </ul>
-        <div className="search-input">
+        <div className="search-input" aria-label="검색">
           <FontAwesomeIcon icon={faSearch} />
-          <input type="text" onKeyDown={(event) => search(event)} />
+          <input type="text" placeholder="검색" onKeyDown={(event) => search(event)} />
         </div>
       </div>
     </div>
